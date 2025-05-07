@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product List - Antique Aangan</title>
+
+    <link rel="stylesheet" href="/css/basic_style.css" />
+    <link rel="stylesheet" href="/css/product_list.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <script src="/js/product_list.js" defer></script>
+
+
+<style>
+
+.background-wrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-image: url('/assets/bg.jpg');
+        opacity: 0.95; 
+        background-size: cover;
+        background-position: center;
+        z-index: 0;
+      }
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.75); 
+      }
+
+
+      .container,
+      .top-nav,
+      .bottom-nav,
+      .header,
+      section,
+      footer {
+        position: relative;
+        z-index: 1;
+      }
+
+
+      .top-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 2;
+      }
+
+      .bottom-nav {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        z-index: 2;
+      }
+
+      .main {
+        padding-bottom: 40px;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <div class="background-wrapper">
+      <div class="overlay"></div>
+    </div>
+
+    <div class="container">
+      <div class="main">
+        
+        <nav class="top-nav">
+          <div><i class="fa-solid fa-bars" ></i></div>
+          <div><h3 class="brand-title">Antique Aangan</h3></div>
+          <div>
+            <button class="icon-button"><i class="fa-regular fa-heart base-icon"></i></button>
+            <button class="icon-button"><i class="fa-solid fa-cart-shopping base-icon"></i></i></button>
+          </div>
+        </nav>
+        
+        
+        <header class="header p-25">
+
+          <div class="flex justify-between items-center">
+            <a href="/html screens/search screen.html">
+              <i class="fa-solid fa-arrow-left text-primary text-2xl"></i>
+            </a>
+            <h3 class="text-primary" style="padding-bottom: 12px;">Royal Collection</h3>
+            <div></div>
+          </div>
+
+          <div class="button-wrapper">
+            <div class="text-warm" data-category="Sofa">
+               <button class="primary-button-active">Sofa</button>
+            </div>
+            <div class="text-warm" data-category="Cabinets">
+               <button class="primary-button">Cabinets</button>
+            </div>
+            <div class="text-warm" data-category="Armchairs">   
+               <button class="primary-button">Armchairs</button>
+            </div>   
+            <div class="text-warm" data-category="Tables">   
+               <button class="primary-button">Tables</button>
+            </div> 
+            <div class="text-warm" data-category="Chairs">  
+               <button class="primary-button last-button">Chairs</button>
+            </div>   
+          </div>
+
+          <div class="mt-25">
+            <div class="flex justify-between items-center md:justify-end">
+              <div>
+                <i class="fa-solid fa-filter text-primary-bright"></i>
+                <button class="text-primary-bright">Filter</button>
+              </div>
+              <div>
+                <button class="text-primary-bright">
+                  Price: Lowest to high
+                </button>
+              </div>
+              <div>
+                <i class="fa-solid fa-bars menu-prod"></i>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <section
+          class="p-25 grid gap-10 grid-cols-2"
+          style="margin-bottom: 100px; margin-top: 0px; margin-right: 16px;">
+
+
+          <div class="text-warm">
+            <a href="product_description.html">
+              <img src="/assets/royal chair.jpg" class="w-92 h-92 rounded" alt="royal sofa img"/>
+            </a>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center">
+                <i class="fa-solid fa-star text-gold"></i>
+                <p class="text-primary-bright">4.5(99)</p>
+              </div>
+              <button class="icon-button icon-heart">
+                <i class="fa-regular fa-heart base-icon"></i>
+              </button>
+            </div>
+            <p style="padding-top: 8px;">Royal Indian Armchair</p>
+            <p style="padding-top: 6px;">₹ 60,000</p>
+          </div>
+
+          <div class="text-warm">
+            <a href="product_description.html">
+              <img src="/assets/Maharaja Sofa.jpg" class="w-92 h-92 rounded" alt="royal chair img"/>
+            </a>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center">
+                <i class="fa-solid fa-star text-gold"></i>
+                <p class="text-primary-bright">4.5(997)</p>
+              </div>
+              <button class="icon-button icon-heart">
+                <i class="fa-regular fa-heart base-icon"></i>
+              </button>
+            </div>
+            <p style="padding-top: 10px;">Maharaja sofa set</p>
+            <p style="padding-top: 6px;">₹ 87,699</p>
+          </div>
+
+          <div class="text-warm">
+            <a href="product_description.html">
+              <img src="/assets/Sofa cream.jpg" class="w-92 h-92 rounded" alt="" />
+            </a>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center">
+                <i class="fa-solid fa-star text-gold"></i>
+                <p class="text-primary-bright">4.2(980)</p>
+              </div>
+              <button class="icon-button icon-heart">
+                <i class="fa-regular fa-heart base-icon"></i>
+              </button>
+            </div>
+            <p style="padding-top: 10px;">Royal Antique Sofa</p>
+            <p style="padding-top: 6px;">₹ 98,999</p>
+          </div>
+
+          <div class="text-warm">
+            <a href="product_description.html">
+              <img src="/assets/wooden sofa.jpg" class="w-92 h-92 rounded" alt="" />
+            </a>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center">
+                <i class="fa-solid fa-star text-gold"></i>
+                <p class="text-primary-bright">4.4(68)</p>
+              </div>
+              <button class="icon-button icon-heart">
+                <i class="fa-regular fa-heart base-icon"></i>
+              </button>
+            </div>
+            <p style="padding-top: 10px;">Sheesham sofa set</p>
+            <p style="padding-top: 6px;">₹ 1,05,050</p>
+          </div>
+
+          <div class="text-warm">
+            <a href="product_description.html">
+              <img src="/assets/royal sofa.jpg" class="w-92 h-92 rounded" alt="" />
+            </a>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center">
+                <i class="fa-solid fa-star text-gold"></i>
+                <p class="text-primary-bright">4.7(2k)</p>
+              </div>
+              <button class="icon-button icon-heart">
+                <i class="fa-regular fa-heart base-icon"></i>
+              </button>
+            </div>
+            <p style="padding-top: 10px;">Royal Red Sofa</p>
+            <p tyle="padding-top: 6px;">₹ 97,569</p>
+          </div>
+        </section>
+      </div>
+    </div>
+
+
+    <footer class="bottom-nav">
+      <a href="/html screens/home screen.html" class="flex-col place-items-items gap-5">
+        <i class="fa-solid fa-house"></i>
+        <p>Home</p>
+      </a>
+      <a href="/html screens/search screen.html" class="flex-col place-items-items gap-5">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <p>Search</p>
+      </a>
+      <a class="flex-col place-items-items gap-5">
+        <i class="fa-solid fa-user"></i>
+        <p>Profile</p>
+      </a>
+    </footer>
+
+  </body>
+</html>

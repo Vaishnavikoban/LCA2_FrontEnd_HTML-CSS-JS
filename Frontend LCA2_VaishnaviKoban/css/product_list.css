@@ -1,0 +1,46 @@
+.menu-prod{
+    color: white;
+}
+
+ .button-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.button-wrapper::-webkit-scrollbar {
+    display: none;
+}
+.last-button {
+    margin-right: -30px; 
+}
+
+.primary-button {
+    background-color: #dacabc;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: auto 16px;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.primary-button-active {
+    background-color: #b99e7b;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: auto 16px;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+
+.icon-heart-filled {
+    background-color: red;
+}
+  
+/* 
+.last-item {
+    margin-top: -15px;
+} */
